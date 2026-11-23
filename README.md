@@ -54,8 +54,7 @@ wrong with it.
 - **Linux** — no warning, but an AppImage has to be made executable before it
   will run: `chmod +x Threadline_<version>_amd64.AppImage`.
 
-A Windows certificate is being obtained, and this warning will disappear in a
-later release.
+Windows code signing is planned for a later release.
 
 ## What it does
 
