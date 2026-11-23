@@ -41,21 +41,21 @@ published, and says so in the app if one has. The request sends nothing about
 you, and Settings → About can turn it off. The app only tells you and links
 here; it never downloads or installs anything by itself.
 
-### The first launch needs one extra step
+### On Windows, the first launch needs one extra step
 
-These builds are not yet signed with a paid developer certificate, so macOS and
-Windows will both warn that the publisher cannot be verified. What that warning
-means in practice is that the operating system can see the file carries no
-certificate it recognises — not that it found anything wrong with it.
+The macOS builds are signed and notarised by Apple, so they open normally: no
+warning and no Terminal step. The Windows build is not yet signed with a paid
+developer certificate, so Windows will warn that the publisher cannot be
+verified. What that warning means in practice is that the operating system can
+see the file carries no certificate it recognises — not that it found anything
+wrong with it.
 
-- **macOS** — right-click the app and choose *Open*, then confirm once. Or, from
-  a terminal: `xattr -dr com.apple.quarantine /Applications/Threadline.app`.
 - **Windows** — choose *More info*, then *Run anyway*.
 - **Linux** — no warning, but an AppImage has to be made executable before it
   will run: `chmod +x Threadline_<version>_amd64.AppImage`.
 
-Certificates are being obtained, and these warnings will disappear in a later
-release.
+A Windows certificate is being obtained, and this warning will disappear in a
+later release.
 
 ## What it does
 
