@@ -38,8 +38,9 @@ dependency and let your package manager supply it.
 
 Threadline asks this repository once a day whether a newer release has been
 published, and says so in the app if one has. The request sends nothing about
-you, and Settings → About can turn it off. The app only tells you and links
-here; it never downloads or installs anything by itself.
+you, and Settings → About can turn the daily check off. From 1.2.0, Install now
+downloads the update from GitHub and installs it in place, only when you press
+it; the app never downloads or installs anything by itself.
 
 ### On Windows, the first launch needs one extra step
 
@@ -90,9 +91,10 @@ Settings → Export data writes every table to one JSON file you choose, and the
 app can keep dated backups in a folder of your choice.
 
 The only servers Threadline contacts are the calendar feeds you add yourself
-(read-only) and, once a day, GitHub — to ask whether a newer version has been
-published. That request sends nothing about you or your work, and you can turn
-it off. There is no telemetry of any kind, and logs never contain the titles or
+(read-only) and GitHub: once a day to ask whether a newer version has been
+published, and, only when you press Install now, to download it. Neither
+request sends anything about you or your work, and you can turn the daily
+check off. There is no telemetry of any kind, and logs never contain the titles or
 notes of your items.
 
 ## Licence
